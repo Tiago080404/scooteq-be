@@ -5,8 +5,7 @@ FROM openjdk:21-jdk-slim
 WORKDIR /app
 
 #Step 3: Copy the JAR file from the target folder to the working directory
-COPY target/scooteq-be-0.0.1-SNAPSHOT.jar app.jar
-
+COPY target/scooteq-be-0.0.1-SNAPSHOT.jar scooteq-be-0.0.1-SNAPSHOT.jar
 # Step 4: Expose the port your application will run on
 EXPOSE 8080
 
